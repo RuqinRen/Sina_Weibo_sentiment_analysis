@@ -1,5 +1,6 @@
-# 原代码参考https://github.com/dataabc/weiboSpider －－ 更新新浪微博api cookie的指南
 #-*- coding = utf-8
+#如何更新cookie？＃1.用Chrome打开https://passport.weibo.cn/signin/login；2.按F12键打开Chrome开发者工具；3.点开“Network”，将“Preserve log”选中，输入微博的用户名、密码，登录，如图所示： 4.点击Chrome开发者工具“Name"列表中的"m.weibo.cn"或login,点击"Headers"，其中"Request Headers"下，"Cookie"后的值即为我们要找的cookie值，复制。
+#其中不是all cookie options are necessary！
 
 from fake_useragent import UserAgent
 from bs4 import BeautifulSoup
